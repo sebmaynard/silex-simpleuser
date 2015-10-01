@@ -70,6 +70,9 @@ class UserServiceProvider implements ServiceProviderInterface, ControllerProvide
             // A list of custom fields to support in the edit controller.
             'editCustomFields' => array(),
 
+            // Available roles for users to pick from in the edit screen
+            'roles' => array('ROLE_USER', 'ROLE_ADMIN'),
+            
             // Override table names, if necessary.
             'userTableName' => 'users',
             'userCustomFieldsTableName' => 'user_custom_fields',
